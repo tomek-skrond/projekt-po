@@ -10,7 +10,7 @@
 #include "Shop.h"
 
 void Shop::initWindow(){
-	this->window = new sf::RenderWindow(sf::VideoMode(1920, 1080), "game");
+	this->window = new sf::RenderWindow(sf::VideoMode(1280,720), "game");
 }
 
 Shop::Shop(){
@@ -49,27 +49,27 @@ void Shop::klik1()
 {
 	sf::Mouse mouse;
 	sf::Vector2f position = sf::Vector2f(mouse.getPosition(*window));
-	if (position.x >= 10 && position.x <= 230 && position.y <= 1000 && position.y >= 950)
+	if (position.x >= 10 && position.x <= 190 && position.y <= 690 && position.y >= 650)
 	{
-		std::cout << "KLIK" << std::endl;
+		
 		Shop::run();
 	}
-	if (position.x >= 240 && position.x <= 480 && position.y <= 1000 && position.y >= 950)
+	if (position.x >= 200 && position.x <= 370 && position.y <= 690 && position.y >= 650)
 	{
 		
 		Shop::NapojeSklep();
 	}
-	if (position.x >= 490 && position.x <= 730 && position.y <= 1000 && position.y >= 950)
+	if (position.x >= 400 && position.x <= 570 && position.y <= 690 && position.y >= 650)
 	{
 
 		Shop::WarzywaSklep();
 	}
-	if (position.x >= 740 && position.x <= 975 && position.y <= 1000 && position.y >= 950)
+	if (position.x >= 580 && position.x <= 750 && position.y <= 690 && position.y >= 650)
 	{
 
 		Shop::NabialSklep();
 	}
-	if (position.x >= 975 && position.x <= 1200 && position.y <= 1000 && position.y >= 950)
+	if (position.x >= 770 && position.x <= 950 && position.y <= 690 && position.y >= 650)
 	{
 
 		Shop::PieczywoSklep();
@@ -113,27 +113,27 @@ void Shop::render(){
 	
 	//Strzalaka 1 Kasa
 	sf::Sprite st1(this->st1);
-	st1.setPosition(sf::Vector2f(10, 950));
-	st1.setScale(sf::Vector2f(0.5, 0.4));
+	st1.setPosition(sf::Vector2f(10, 650));
+	st1.setScale(sf::Vector2f(0.4, 0.3));
 	//Strzalka 2 Napoje
 	sf::Sprite st2(this->st2);
-	st2.setPosition(sf::Vector2f(250, 950));
-	st2.setScale(sf::Vector2f(0.5, 0.4));
+	st2.setPosition(sf::Vector2f(200, 650));
+	st2.setScale(sf::Vector2f(0.4, 0.3));
 	//Strzalka 3 Warzywka
 	sf::Sprite st3(this->st3);
-	st3.setPosition(sf::Vector2f(490, 950));
-	st3.setScale(sf::Vector2f(0.5, 0.4));
+	st3.setPosition(sf::Vector2f(390, 650));
+	st3.setScale(sf::Vector2f(0.4, 0.3));
 	//Strzalka 4 Nabia³
 	sf::Sprite st4(this->st4);
-	st4.setPosition(sf::Vector2f(730, 950));
-	st4.setScale(sf::Vector2f(0.5, 0.4));
+	st4.setPosition(sf::Vector2f(580, 650));
+	st4.setScale(sf::Vector2f(0.4, 0.3));
 	//Strzalka 5 Pieczywo
 	sf::Sprite st5(this->st5);
-	st5.setPosition(sf::Vector2f(970, 950));
-	st5.setScale(sf::Vector2f(0.5, 0.4));
+	st5.setPosition(sf::Vector2f(770, 650));
+	st5.setScale(sf::Vector2f(0.4, 0.3));
 	//Strzalka 7 koszyk
 	sf::Sprite st7(this->st7);
-	st7.setPosition(sf::Vector2f(1800, 940));
+	st7.setPosition(sf::Vector2f(1100, 640));
 	st7.setScale(sf::Vector2f(0.15, 0.15));
 	st7.setColor( sf::Color(0, 254, 0));
 	
