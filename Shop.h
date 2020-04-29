@@ -57,6 +57,7 @@ public:
 	void update();
 	void loadTexture(const std::string& screen);
 	void render();
+	void renderWarzywa();
 	void run();
 	void NapojeSklep();
 	void WarzywaSklep();
