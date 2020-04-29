@@ -22,6 +22,7 @@ const std::string ST4 = "img/button4.png";
 const std::string ST5 = "img/button5.png";
 const std::string ST6 = "img/button6.png";
 const std::string ST7 = "img/koszyk.png";
+const std::string marchew = "img/marchew.jpg";
 
 
 
@@ -44,6 +45,7 @@ class Shop
 	sf::Texture st5;
 	sf::Texture st6;
 	sf::Texture st7;
+	sf::Texture m;
 
 	void initWindow();
 public:

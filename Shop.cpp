@@ -8,6 +8,8 @@
 
 
 #include "Shop.h"
+#include "Produkt.h"
+#include "Warzywa.h"
 
 void Shop::initWindow(){
 	this->window = new sf::RenderWindow(sf::VideoMode(1280,720), "game");
@@ -164,6 +166,7 @@ void Shop::run(){
 		this->update();
 		this->loadTexture(MAIN_SCREEN);
 		
+
 		this->render();
 		
 
@@ -177,7 +180,6 @@ void Shop::NapojeSklep() {
 		
 		this->render();
 
-
 	}
 }
 void Shop::WarzywaSklep() {
@@ -185,8 +187,16 @@ void Shop::WarzywaSklep() {
 	{
 		this->update();
 		this->loadTexture(warzywaBg);
-		
 		this->render();
+		sf::Sprite m(m);
+		m.setPosition(sf::Vector2f(200, 256));
+		m.setScale(sf::Vector2f(0.2, 0.2));
+		m.setColor(sf::Color(255, 255, 255));
+		window->draw(m);
+		window->display();
+
+		this->m.loadFromFile(marchew);
+
 
 
 	}
