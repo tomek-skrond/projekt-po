@@ -123,7 +123,7 @@ void Shop::render(){
 	sf::Sprite st3(this->st3);
 	st3.setPosition(sf::Vector2f(390, 650));
 	st3.setScale(sf::Vector2f(0.4, 0.3));
-	//Strzalka 4 Nabia�
+	//Strzalka 4 Nabia³
 	sf::Sprite st4(this->st4);
 	st4.setPosition(sf::Vector2f(580, 650));
 	st4.setScale(sf::Vector2f(0.4, 0.3));
@@ -155,6 +155,65 @@ void Shop::render(){
 	this->Strzala4(ST4);
 	this->Strzala5(ST5);
 	this->Strzala7(ST7);
+}
+
+void Shop::renderWarzywa() {
+
+	sf::Sprite s(this->t);
+
+
+	//Strzalaka 1 Kasa
+	sf::Sprite st1(this->st1);
+	st1.setPosition(sf::Vector2f(10, 650));
+	st1.setScale(sf::Vector2f(0.4, 0.3));
+	//Strzalka 2 Napoje
+	sf::Sprite st2(this->st2);
+	st2.setPosition(sf::Vector2f(200, 650));
+	st2.setScale(sf::Vector2f(0.4, 0.3));
+	//Strzalka 3 Warzywka
+	sf::Sprite st3(this->st3);
+	st3.setPosition(sf::Vector2f(390, 650));
+	st3.setScale(sf::Vector2f(0.4, 0.3));
+	//Strzalka 4 Nabiał
+	sf::Sprite st4(this->st4);
+	st4.setPosition(sf::Vector2f(580, 650));
+	st4.setScale(sf::Vector2f(0.4, 0.3));
+	//Strzalka 5 Pieczywo
+	sf::Sprite st5(this->st5);
+	st5.setPosition(sf::Vector2f(770, 650));
+	st5.setScale(sf::Vector2f(0.4, 0.3));
+	//Strzalka 7 koszyk
+	sf::Sprite st7(this->st7);
+	st7.setPosition(sf::Vector2f(1100, 640));
+	st7.setScale(sf::Vector2f(0.15, 0.15));
+	st7.setColor(sf::Color(0, 254, 0));
+	//Marchewka
+	sf::Sprite m(this->m);
+	m.setPosition(sf::Vector2f(200, 256));
+	m.setScale(sf::Vector2f(0.2, 0.2));
+	m.setColor(sf::Color(255, 255, 255));
+	window->draw(m);
+
+
+	this->window->clear(sf::Color::White);
+
+	window->draw(s);
+	window->draw(st1);
+	window->draw(st2);
+	window->draw(st3);
+	window->draw(st4);
+	window->draw(st5);
+	window->draw(st7);
+	window->draw(m);
+	this->window->display();
+
+	this->Strzala1(ST1);
+	this->Strzala2(ST2);
+	this->Strzala3(ST3);
+	this->Strzala4(ST4);
+	this->Strzala5(ST5);
+	this->Strzala7(ST7);
+	this->m.loadFromFile(marchew);
 }
 
 
